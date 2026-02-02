@@ -24,7 +24,7 @@
 #define PIN_SR_SER        48  // 595 SR - SER
 
 byte Outputs595_1    = 0b00000000;    // Bit cache for 74HC595D #1 (U7 as per 2.x schmatic), 00000000 = all relays off
-byte Outputs595_2    = 0b01111000;    // Bit cache for 74HC595D #2 (U8 as per 2.x schmatic), 01110000 = targets the analog multiplexer to the on-board NTC with relays off
+byte Outputs595_2    = 0b01110000;    // Bit cache for 74HC595D #2 (U8 as per 2.x schmatic), 01110000 = targets the analog multiplexer to the on-board NTC with relays off
 
 // Steinhart-Hart (Beta version) equation
 float readNTCTemperature(int adcReading,float VadcMax = 3.3,float Rseries = 10000,float VntcTop = 0,float VntcBottom = 0,float R0 = 10000.0,float T0 = 25.0 + 273.15,float B = 3950.0){
