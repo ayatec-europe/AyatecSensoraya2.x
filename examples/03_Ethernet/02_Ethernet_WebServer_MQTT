@@ -53,40 +53,29 @@ IPAddress lastEthIP;
 
 void ETHEventLoop() {   // maintains connection to the local network via W5500 ethernet module
     if (Ethernet.hardwareStatus() == EthernetNoHardware) {
-      Serial.println("Ethernet Module Not Found!");
+      Serial.println("Ethernet module not found!");
       eth_connected = false;
       eth_cable_flag = false;
     }
 
     if (Ethernet.linkStatus() == LinkON) {
       if (!eth_cable_flag) {
-        Serial.println("Ethernet Cable Found!");
+        Serial.println("Ethernet cable found!");
         eth_cable_flag = true;
-
-        if (Ethernet.localIP() == IPAddress(0, 0, 0, 0)) {
-          Serial.println("Requesting DHCP...");
-          Ethernet.begin(mac);
-        }
       }
 
     } else {
       if (eth_cable_flag) {
-        Serial.println("Ethernet Cable Disconnected!");
+        Serial.println("Ethernet cable disconnected!");
         eth_cable_flag = false;
         eth_connected = false;
       }
     }
 
     if (Ethernet.localIP() != lastEthIP) {
-      if (Ethernet.localIP() == IPAddress(0, 0, 0, 0)) {
-        Serial.println("Lost IP address!");
-        eth_connected = false;
-      } else {
-        Serial.print("New IP Assigned: ");
-        Serial.println(Ethernet.localIP());
-        eth_connected = true;
-      }
-      lastEthIP = Ethernet.localIP();  // Update last known assigned IP address
+      Serial.print("IP address: ");
+      Serial.println(Ethernet.localIP());
+      lastEthIP = Ethernet.localIP();
     }
 }
 
