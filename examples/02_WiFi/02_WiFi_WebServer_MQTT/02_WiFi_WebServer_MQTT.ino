@@ -1,5 +1,5 @@
 /*
-  Name: WiFi HTTP + MQTT
+  Name: WiFi WebServer + MQTT
   Board: esp32 -> ESP32S3 Dev Module / DevKit
   Hardware: ayatec sensoraya v2.1
 
