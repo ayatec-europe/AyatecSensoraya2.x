@@ -8,12 +8,16 @@ developed by ayatec europe and intended for use in bespoke embedded systems.
 - ayatec sensoraya v2.x
 
 ## Requirements
-- Arduino IDE
-- ESP32 core by Espressif
+- Arduino IDE (incl. Arduino native libraries)
+- ESP32 core by Espressif (incl. ESP32 core libraries)
 - relevant basic 3rd party libraries where applicable:
   - EthernetWebServer by Khoi Hoang
   - PubSubClient by Nick O'Leary
-
+  - RTClib by Adafruit
+  - Adafruit_GFX by Adafruit
+  - Adafruit_SSD1306 by Adafruit
+  - DFRobotDFPlayerMini by DFRobot
+ 
 ## Getting Started
 1. Install Arduino IDE
 2. Install ESP32 boards package
@@ -34,10 +38,10 @@ Recommended board set-up:
 - PSRAM: Disabled
 - JTAG Adapter: Disabled
 
-
 ## Repository Structure
 - examples/ – Arduino example sketches
 - docs/ – pinouts, schematics, guides
+- src/ – pin definitions (optional)
 
 ## License
 MIT License
