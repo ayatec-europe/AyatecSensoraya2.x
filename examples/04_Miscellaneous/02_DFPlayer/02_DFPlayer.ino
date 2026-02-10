@@ -11,7 +11,7 @@
   - DFPlayer: IO41, IO42 (DFPlayer TX/RX, see sensoraya v2.1 schematic)
 
   Dependencies:
-  - N/A
+  - DFRobotDFPlayerMini by DFRobot
 
   Created: 2026-02-09
   Author: ayatec (Michal Liptak)
