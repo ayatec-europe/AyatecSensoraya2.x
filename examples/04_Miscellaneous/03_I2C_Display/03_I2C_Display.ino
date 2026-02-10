@@ -11,7 +11,8 @@
   - I2C: IO39, IO40 (SCL/SDA, see sensoraya v2.1 schematic)
 
   Dependencies:
-  - N/A
+  - Adafruit_GFX by Adafruit
+  - Adafruit_SSD1306 by Adafruit
 
   Created: 2026-02-09
   Author: ayatec (Michal Liptak)
