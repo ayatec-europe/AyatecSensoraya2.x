@@ -23,7 +23,7 @@ developed by ayatec europe and intended for use in bespoke embedded systems.
 2. Install ESP32 boards package
 3. Install ayatec_sensoraya_2_demo library
 4. Choose ESP32S3 Dev Module board
-5. Open File → Examples → ayatec_sensoraya_2_demo library → 01_Basics → 01_Blink
+5. Open File → Examples → Ayatec Sensoraya 2.x → 01_Basics → 01_Blink
    
 Recommended board set-up:
 - Board: ESP32S3 Dev Module
